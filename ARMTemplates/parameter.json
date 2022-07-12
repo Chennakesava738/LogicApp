@@ -3,13 +3,13 @@
     "contentVersion": "1.0.0.0",
     "parameters": {
         "workflows_My-LogicApp": {
-            "value": null
+            "value": LogicApp
         },
         "connections_gmail_externalid": {
-            "value": null
+            "value": Gmail
         },
         "connections_rss_externalid": {
-            "value": null
+            "value": RssFeed
         }
     }
 }
