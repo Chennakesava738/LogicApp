@@ -25,4 +25,4 @@ jobs:
           subscriptionId: ${{ secrets.AZURE_SUBSCRIPTION }}
           resourceGroupName: ${{ secrets.AZURE_RG }}
           template: ./ARMTemplates/My-LogicApp.json
-          parameters: ./ARMTemplates/parameter.json
+          parameters: ./ARMTemplates/parameters.json
