@@ -6,7 +6,7 @@
             "value": "LogicApp"
         },
         "connections_gmail_externalid": {
-            "value": null
+            "value": "gmail"
         },
         "connections_rss_externalid": {
             "value": null
