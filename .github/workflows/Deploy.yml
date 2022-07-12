@@ -1,0 +1,28 @@
+name: AzureARM Deploy
+on: [push]
+
+jobs:
+  Deploy:
+   runs-on: ubuntu-latest
+   steps:
+     - name: Login to Azure
+       uses: azure/login@v1
+       with:
+        creds: ${{secrets.AZURE_CREDENTIALS}}
+     - name: Checkout source code 
+       uses: actions/checkout@v2
+     
+     - name: Deploy ARM Template
+       uses: azure/arm-deploy@v1
+       with:
+        # inlineScript: | 
+        #   az deployment group create \
+        #     --name StroageAccountDeployment \
+        #     --resource-group savdevgithubdeploy \
+        #     --template-file ARMTemplates/storageaccount.json \
+        #     --parameters storageAccountType=Standard_GRS
+        # azPSVersion: latest
+          subscriptionId: ${{ secrets.AZURE_SUBSCRIPTION }}
+          resourceGroupName: ${{ secrets.AZURE_RG }}
+          template: ./ARMTemplates/My-LogicApp.json
+          parameters: ./ARMTemplates/parameter.json
