@@ -6,10 +6,10 @@
             "value": "{{ azure_logic_app_name }}"
         },
         "connections_gmail_externalid": {
-            "value": "gmail"
+            "value": "/subscriptions/subscription-id/resourceGroups/RG/providers/Microsoft.Web/connections/gmail"
         },
         "connections_rss_externalid": {
-            "value": "rss"
+            "value": "/subscriptions/subscription-id/resourceGroups/RG/providers/Microsoft.Web/connections/rss"
         }
     }
 }
