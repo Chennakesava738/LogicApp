@@ -82,22 +82,6 @@
                     },
                     "outputs": {}
                 },
-                "parameters": {
-                    "$connections": {
-                        "value": {
-                            "gmail": {
-                                "connectionId": "[parameters('connections_gmail_externalid')]",
-                                "connectionName": "gmail",
-                                "id": "/subscriptions/beb2107a-2219-488b-929e-7939bb20b9a2/providers/Microsoft.Web/locations/centralus/managedApis/gmail"
-                            },
-                            "rss": {
-                                "connectionId": "[parameters('connections_rss_externalid')]",
-                                "connectionName": "rss",
-                                "id": "/subscriptions/beb2107a-2219-488b-929e-7939bb20b9a2/providers/Microsoft.Web/locations/centralus/managedApis/rss"
-                            }
-                        }
-                    }
-                }
             }
         }
     ]
