@@ -3,19 +3,13 @@
     "contentVersion": "1.0.0.0",
     "parameters": {
         "workflows_My-LogicApp": {
-            "value": "Logic"
+            "value": "{{ azure_logic_app_name }}"
         },
         "connections_gmail_externalid": {
             "value": "gmail"
         },
         "connections_rss_externalid": {
             "value": "rss"
-        },
-        "subscription-id": {
-          "value": "beb2107a-2219-488b-929e-7939bb20b9a2"
-        },
-       "RG":{
-        "value": "Dev-LA"
-       }
+        }
     }
 }
