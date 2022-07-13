@@ -7,11 +7,11 @@
             "type": "String"
         },
         "connections_gmail_externalid": {
-            "defaultValue": "/subscriptions/beb2107a-2219-488b-929e-7939bb20b9a2/resourceGroups/Dev-LA/providers/Microsoft.Web/connections/gmail",
+            "defaultValue": "/subscriptions/subscription-id/resourceGroups/RG/providers/Microsoft.Web/connections/gmail",
             "type": "String"
         },
         "connections_rss_externalid": {
-            "defaultValue": "/subscriptions/beb2107a-2219-488b-929e-7939bb20b9a2/resourceGroups/Dev-LA/providers/Microsoft.Web/connections/rss",
+            "defaultValue": "/subscriptions/subscription-id/resourceGroups/RG/providers/Microsoft.Web/connections/rss",
             "type": "String"
         }
     },
