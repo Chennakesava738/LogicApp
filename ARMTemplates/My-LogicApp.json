@@ -3,7 +3,7 @@
     "contentVersion": "1.0.0.0",
     "parameters": {
         "workflows_My-LogicApp": {
-            "defaultValue": "My-LogicApp-2",
+            "defaultValue": "My-Logic",
             "type": "String"
         },
         "connections_gmail_externalid": {
