@@ -15,13 +15,6 @@ jobs:
      - name: Deploy ARM Template
        uses: azure/arm-deploy@v1
        with:
-        # inlineScript: | 
-        #   az deployment group create \
-        #     --name StroageAccountDeployment \
-        #     --resource-group savdevgithubdeploy \
-        #     --template-file ARMTemplates/storageaccount.json \
-        #     --parameters storageAccountType=Standard_GRS
-        # azPSVersion: latest
           subscriptionId: ${{ secrets.AZURE_SUBSCRIPTION }}
           resourceGroupName: ${{ secrets.AZURE_RG }}
           template: ./ARMTemplates/My-LogicApp.json
