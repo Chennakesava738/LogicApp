@@ -3,7 +3,7 @@
     "contentVersion": "1.0.0.0",
     "parameters": {
         "workflows_My-LogicApp": {
-            "value": "LogicApp"
+            "value": "LogicApp-6"
         },
         "connections_gmail_externalid": {
             "value": "gmail"
