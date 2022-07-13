@@ -3,7 +3,7 @@
     "contentVersion": "1.0.0.0",
     "parameters": {
         "workflows_My-LogicApp": {
-            "value": "{{ azure_logic_app_name }}"
+            "value": "azure_logic_app_name"
         },
         "connections_gmail_externalid": {
             "value": "/subscriptions/subscription-id/resourceGroups/RG/providers/Microsoft.Web/connections/gmail"
