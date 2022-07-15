@@ -1,8 +1,8 @@
 name: AzureARM Deploy
 
 on: push
-env:
-  id-token: write
+env: 
+ id-token: write
 jobs:
   Deploy:
    runs-on: ubuntu-latest
