@@ -1,6 +1,6 @@
 name: AzureARM Deploy
 
-on: workflow_dispatch
+on: push
 
 jobs:
   Deploy:
