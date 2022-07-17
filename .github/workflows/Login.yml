@@ -6,7 +6,7 @@ permissions:
       contents: read
       
 jobs: 
-  ubuntu-latest:
+  build-and-deploy:
       runs-on: ubuntu-latest
       steps:
         - name: OIDC Login to Azure Public Cloud with AzPowershell (enableAzPSSession true)
@@ -16,13 +16,8 @@ jobs:
             tenant-id: ${{ secrets.AZURE_TENANT_ID }}
             subscription-id: ${{ secrets.AZURE_SUBSCRIPTION_ID }} 
             enable-AzPSSession: true
-        - name: Checkout source code 
-          uses: actions/checkout@v2
-     
-        - name: Deploy ARM Template
-          uses: azure/arm-deploy@v1
-          with:
-            subscriptionId: ${{ secrets.AZURE_SUBSCRIPTION_ID }}
-            resourceGroupName: ${{ secrets.AZURE_RG }}
-            template: ./ARMTemplates/My-LogicApp.json
-            parameters: ./ARMTemplates/parameters.json
+        - name: 'Run az commands'
+          run: |
+            az account show
+            az group list
+            pwd     
